@@ -1,0 +1,42 @@
+header{
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 280px;
+  font-size: 1.7rem;
+}
+
+header h1{
+  margin: 0;
+  margin-bottom: 30px;
+  padding-top: 50px;
+  font-size: 50px;
+  color: #519872;
+}
+header h5{
+  margin: 0;
+  margin-bottom: 30px;
+  padding-top: 50px;
+  font-size: 40px;
+  color: #900c3f;
+}
+
+header h4{
+  font-style: italic;
+  font-family: Luminari, fantasy;
+  font-size: 35px;
+  color: #eebb4d;
+}
+
+header a{
+  padding: 15px;
+  background-color: #fddb3a;
+  border-radius: 40%;
+}
+
+
+@media screen and (max-width: 768px) {
+header{
+  padding-bottom: 400px;
+}
+}

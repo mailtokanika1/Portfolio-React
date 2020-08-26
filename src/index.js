@@ -1,17 +1,20 @@
-import React from 'react';
+import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+//import App from './App';
+import Navigation from './navigation.js';
+import Header from './header.js'
+import About from './about.js'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+class App extends Component{
+  render(){
+    return(
+      <div>
+      <Navigation />
+      <Header title="This was the whole content of my page" text="Thank you for reaching out here."/>
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+      </div>
+    );
+  }
+}
+ReactDOM.render(<App />,document.getElementById('root'));

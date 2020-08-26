@@ -1,0 +1,47 @@
+.about{
+  background-color: #ffaa71;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+
+.about h3{
+  color: #3c2946;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  text-align: center;
+  font-size: 40px;
+}
+
+
+.about > .rows{
+  display: flex;
+  justify-content: space-around;
+}
+
+.about > .rows span{
+  background-color: #fff;
+  width: 112px;
+  height: 112px;
+  display: inline-block;
+  border-radius: 50%;
+  color: #1d809f;
+  font-size: 36px;
+  line-height: 120px;
+}
+.about > .rows h4{
+  margin-bottom: 8px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+  font-size: 24px;
+  color: #fff;
+}
+
+.about > .rows p{
+font-size: 16px;
+font-family: cursive;
+font-style: oblique;
+color:#799351;
+}
