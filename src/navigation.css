@@ -1,4 +1,3 @@
-
 body {
   font-family: "Montserrat";
   text-align: center;
@@ -7,42 +6,58 @@ body {
 /* Sections */
 
 .colored-section {
-  background-color: #ff4c68;
+  background-color: #ffa36c;
   color: #fff;
 }
 
 .white-section {
-  background-color: #fff;
-}
+  background-color: #ff9a76;
+  background-image: url(fff.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
 
-h4, h5, h6 {
+h5, h6 {
   font-family: "Montserrat-Bold";
+}
+h4{
+  font-family: cursive;
+  font-style: italic;
+  color: #ffa36c;
+  font-size: 80px;
+
 }
 h3{
 font-family: Brush Script MT, Brush Script Std, cursive;
 font-size: 40px;
-color: #6f4a8e;
+font-style: bold;
+color: #c70039;
 }
 h1{
   font-family: "Montserrat-Bold";
   font-size: 25px;
   font-style: italic;
   color: #ffc93c;
-
 }
+
+
 img{
-  height: 250px;
+  height: 540px;
   width: 250px;
-  border-radius: 48%;
 }
 h2{
   font-family: cursive;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-size: 50px;
   color: red;
+  text-shadow: 4px 4px black;
 }
 p {
-  color: #1b262c;
+  color: #ffd31d;
+  font-size: 20px;
+  text-decoration: bold;
 }
 
 
@@ -50,7 +65,7 @@ p {
 /* Containers */
 
 .container-fluid{
-  padding: 4% 5%;
+  padding: 2% 10%;
 }
 
 
@@ -64,6 +79,7 @@ p {
   font-family: "Ubuntu";
   font-size: 2.5rem;
   font-weight: bold;
+
 }
 
 .nav-item {
@@ -75,16 +91,19 @@ p {
   font-family: "Montserrat-Light";
 }
 
+
 /* Title Section */
 
 #title {
-  background-color: #ff4c68;
+  background-color: #411f1f;
   color: #fff;
   text-align: left;
+  height: 120px;
+  padding-top: 25px;
 }
 
 #title .container-fluid {
-  padding: 3% 7% 5%;
+  padding: 5% 7% 5%;
 }
 
 
@@ -93,8 +112,9 @@ p {
 
   #title {
     text-align: center;
+    padding-top: 5;
+    height: inherit;
   }
-
 }
 /* Features Section */
 
@@ -107,7 +127,7 @@ p {
 }
 
 .feature-box {
-  padding: 6%;
+  padding: 4%;
 }
 
 .icon {
@@ -117,4 +137,126 @@ p {
 
 .icon:hover {
   color: #ff4c68;
+}
+
+.carousel-fade .carousel-item {
+	opacity: 0;
+	transition-duration: .6s;
+	transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+	opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+	opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+	transform: translateX(0);
+	transform: translate3d(0, 0, 0);
+}
+.carousel-caption{
+  text-align: center;
+ padding-bottom: 180px;
+}
+.typewriter h2 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+.my{
+  height: 300px;
+  border-radius: 48%;
+}
+.row{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#interest{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.row2{
+  padding-right: 50px;
+
+}
+blink {
+  -webkit-animation: 1s linear infinite condemned_blink_effect;
+  animation: 1s linear infinite condemned_blink_effect;
+}
+@-webkit-keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+.navbar {
+  min-height: 80px;
+}
+
+.navbar-brand {
+  padding: 0 15px;
+  height: 80px;
+  line-height: 80px;
+}
+
+.navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+    padding-top: 26.5px;
+    padding-bottom: 26.5px;
+    line-height: 27px;
+  }
 }
